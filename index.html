@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aarez Ali Memon</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="cursor">
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+  </div>
+  <div id="progress"></div>
+  <div class="hero-ghost-text">Leaving the world <em>better</em> than I found it.</div>
+
+  <!-- ================================================
+       NAVIGATION
+  ================================================ -->
+  <nav>
+    <div class="nav-logo" onclick="showPage('home')">Aarez Ali</div>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a onclick="showPage('home'); smoothScroll('about')">About</a></li>
+        <li><a onclick="showPage('home'); smoothScroll('experience')">Experience</a></li>
+        <li><a onclick="showPage('home'); smoothScroll('projects')">Projects</a></li>
+        <li><a onclick="showPage('home'); smoothScroll('writing-preview')">Writing</a></li>
+        <li><a onclick="showPage('home'); smoothScroll('contact')">Contact</a></li>
+      </ul>
+      <button class="theme-btn" onclick="toggleTheme()" id="theme-btn">☀</button>
+    </div>
+  </nav>
+
+
+  <!-- ================================================
+       PAGE: HOME
+  ================================================ -->
+  <div class="page active" id="page-home">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-content">
+
+        <!-- Hero layout: text left, photo right -->
+        <div class="hero-layout">
+          <div class="hero-text">
+            <h1>Aarez Ali<br><em>Memon.</em></h1>
+            <!-- Typewriter line -->
+            <p class="hero-typewriter">I am <span id="typewriter-word" class="typewriter-word"></span><span class="typewriter-cursor">|</span></p>
+            <div class="hero-ctas">
+              <button class="btn-primary" onclick="showPage('home'); smoothScroll('projects')">
+                <span>See my work</span>
+              </button>
+              <button class="btn-ghost" onclick="showPage('blog')">Read </button>
+            </div>
+          </div>
+
+          <!-- Hero photo -->
+          <div class="hero-photo-wrap">
+            <div class="hero-photo">
+                <img src="assets/aamheadshot.jpg" alt="Aarez Ali Memon" />
+              <div class="photo-placeholder">
+                <div class="photo-placeholder-inner">
+                </div>
+              </div>
+            </div>
+            <div class="hero-photo-stats">
+              <div class="hero-stat">
+                <span class="s-lbl">Currently at</span>
+                <span class="s-val">Indus Labs</span>
+              </div>
+              <div class="hero-stat">
+                <span class="s-lbl">Based in</span>
+                <span class="s-val">Abu Dhabi / London</span>
+              </div>
+              <div class="hero-stat">
+                <span class="s-lbl">Graduate from</span>
+                <span class="s-val">University of Leeds 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ABOUT -->
+    <div class="divider"></div>
+    <section id="about">
+      <div class="wrap">
+        <div class="reveal"><div class="section-label">About me</div></div>
+        <div class="about-grid">
+          <div class="about-body">
+            <p class="reveal" style="text-align: justify;">
+              Hi, I'm Aarez, a Pakistani who studied Economics at the <strong>University of Leeds</strong>. I am a curious and driven person with a passion for using my skills to solve real-world problems, from <em>forecasting expenditure</em> to <em>behavioural interventions</em> at scale. I've worked across public policy, consulting, and entrepreneurship, and I'm currently a <strong>CFA Level I</strong> candidate working toward a career at the intersection of economics, finance, and technology.
+            </p>
+            <p class="reveal reveal-d2" style="text-align: justify;">
+              This site is where I document my work, projects, and thinking — from econometric models and strategy to the ideas I'm exploring through Indus Labs.
+            </p>
+          </div>
+          <div class="about-right reveal reveal-d2">
+            <div class="info-box-label">Interests</div>
+            <div class="interests">
+              <span class="interest-tag">Strategy</span>
+              <span class="interest-tag">Finance</span>
+              <span class="interest-tag">Technology</span>
+              <span class="interest-tag">Economics</span>
+              <span class="interest-tag">Behaviour</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <div class="divider"></div>
+    <section id="experience">
+      <div class="wrap">
+        <div class="reveal">
+          <div class="section-label">Experience</div>
+          <h2 class="section-title">Where I've <em>worked.</em></h2>
+        </div>
+
+        <div class="exp-item reveal reveal-d1">
+          <div class="exp-meta">
+            <div class="exp-period">Jul 2025 – Present</div>
+            <img src="assets/company.png" alt="Indus Labs" class="exp-logo" />
+          </div>
+          <div class="exp-content">
+            <h3>Founder</h3>
+            <p style="text-align: justify;">
+              Indus Labs is an independent research and production studio exploring the intersection of economics, data, and technology — building tools, models, and ideas that leave the world <em>better</em> than we found it.
+            </p>
+            <ul class="exp-bullets">
+              <li style="text-align: justify;">
+                Developing DictionaryX, an Android app being built and alpha-tested, alongside exploratory projects.
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="exp-item reveal">
+          <div class="exp-meta">
+            <div class="exp-period">Sep 2024 – Jul 2025</div>
+              <img src="assets/lcc-logo.png" alt="LCC" class="exp-logo" />
+          </div>
+          <div class="exp-content">
+            <h3>Consultant</h3>
+            <p style="text-align: justify;">
+              Pro-bono consulting engagement for a local technology client, solving complex business problems across strategy, operations, and commercial growth.
+            </p>
+            <ul class="exp-bullets">
+              <li style="text-align: justify;">
+                Developed a competitor benchmarking framework across five rivals, producing a differentiation strategy covering branding, audience engagement, and sponsorship visibility — recommendations were adopted by the client within weeks of delivery.
+              </li>
+              <li style="text-align: justify;">
+                Built a multi-scenario financial model in Stata and R to evaluate strategic options, identifying initiatives projected to grow annual revenue by 2% within 9 months; applied HuggingFace LLMs in Python to run sentiment analysis on social media data, converting qualitative signals into quantitative strategic inputs.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item reveal reveal-d1">
+          <div class="exp-meta">
+            <div class="exp-period">Oct 2023 – Sep 2024</div>
+            <!--
+              TO ADD COMPANY LOGO:
+              Replace the line below with:
+              <img src="company-logo.png" alt="COMPANY" class="exp-logo" />
+            -->
+            <img src="assets/ges.png" alt="GES" class="exp-logo" />
+          </div>
+          <div class="exp-content">
+            <h3>Economist</h3>
+            <p style="text-align: justify;">
+             The Government Economic Service is the UK government's in-house community of professional economists, placing economists across Whitehall departments to inform policy through rigorous analysis. At the DWP — the UK's largest public spending department — I worked on forecasting and behavioural policy affecting millions of benefit claimants.
+            </p>
+            <ul class="exp-bullets">
+              <li style="text-align: justify;">
+                Developed capital allocation forecasting models in SAS and Excel across 350 Local Authorities, reducing forecast error by 15% through sensitivity analysis and auditability controls, directly informing £200bn in annual expenditure affecting 24 million claimants.
+              </li>
+              <li style="text-align: justify;">
+                Built a behavioural nudge intervention that accelerated Universal Credit rollout across four Local Authorities, contributing to a managed migration programme targeting 800,000+ ESA claimants; also re-engineered Excel workflows cutting processing time by 20%.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <div class="divider"></div>
+    <section id="projects">
+      <div class="wrap">
+        <div class="reveal">
+          <div class="section-label">Projects</div>
+          <h2 class="section-title">Things I've <em>built.</em></h2>
+        </div>
+        <div class="projects-grid">
+
+          <div class="project-card reveal">
+            <!--
+              TO ADD PROJECT IMAGE:
+              Replace the placeholder div below with:
+              <img src="project.jpg" alt="PROJECT" class="project-img" />
+            -->
+            <img src="/assets/project1.png" alt="Excel Model" class="project-img" />
+            <div class="project-body">
+              <div class="project-num">01</div>
+              <span class="project-tag-pill">Econometrics</span>
+              <h3>Econometrics Model</h3>
+              <p>A quantitative model built as part of my independent research work.</p>
+
+              <div class="project-card-meta"><span>Aarez Ali Memon · 2025</span></div>
+              <a href="mailto:yourname@gmail.com?subject=Model Request&body=Hi, I would like to request your Econometrics model." class="contact-link">
+               Available on Request
+              </a>
+            </div>
+          </div>
+    
+
+          <div class="project-card reveal reveal-d1">
+            <img src="/assets/dictionaryx.png" alt="DictionaryX-thumbnail" class="project-img" />
+            <div class="project-body">
+              <div class="project-num">02</div>
+              <span class="project-tag-pill">App</span>
+              <h3>DictionaryX</h3>
+              <p>Alpha Testing an Android App.</p>
+
+              <div class="project-card-meta"><span>Indus Labs · 2026</span></div>
+              <a href="https://www.figma.com/community/file/1618904635336035419" class="contact-link">Proof of Concept</a>
+            </div>
+          </div>
+
+          <div class="project-card reveal reveal-d2">
+            <img src="/assets/project3.png" alt="PROJECTSAMWELL" class="project-img" />
+            <div class="project-body">
+              <div class="project-num">03</div>
+              <span class="project-tag-pill">App</span>
+              <h3>Coming Soon!</h3>
+              <p>Indus Lab's second app is in development. Announcement soon.<p>
+
+              <div class="project-card-meta"><span>Indus Labs · 2026</span></div>
+            </div>
+          </div>
+
+          <!--
+            ADD A PROJECT — copy this block:
+
+            <div class="project-card">
+              <div class="project-img-placeholder">Tag</div>
+              OR: <img src="project-X.jpg" alt="Project name" class="project-img" />
+              <div class="project-body">
+                <div class="project-num">04</div>
+                <span class="project-tag-pill">Your Tag</span>
+                <h3>Project Title</h3>
+                <p>Description.</p>
+                <div class="project-card-meta"><span>Context · Year</span></div>
+              </div>
+            </div>
+          -->
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- WRITING PREVIEW -->
+    <div class="divider"></div>
+    <section id="writing-preview">
+      <div class="wrap">
+        <div class="reveal">
+          <div class="section-label">Writing</div>
+          <h2 class="section-title">Latest <em>articles.</em></h2>
+        </div>
+        <div class="articles-list reveal" id="home-article-list"></div>
+        <div style="margin-top: 2rem;" class="reveal reveal-d1">
+          <button class="btn-ghost" onclick="showPage('blog')">All writing →</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <div class="divider"></div>
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div class="reveal">
+            <div class="section-label">Contact</div>
+            <h2 class="contact-h">Let's <em>talk.</em></h2>
+            <p class="contact-body">
+              I am always up for a conversation! 
+            </p>
+            <a href="mailto:yourname@gmail.com?subject=Let's Connect!&body=Hi, I would love to connect! When can we talk?" class="btn-primary"><span>Send me an email</span></a>
+          </div>
+          <div class="reveal reveal-d2">
+            <div class="contact-links">
+              <a href="https://www.linkedin.com/in/aarezalimemon/" class="contact-link" target="_blank">
+                <div class="contact-link-icon">in</div>
+               LinkedIn
+              </a>
+              <a href="https://github.com/induslabsgh" class="contact-link" target="_blank">
+                <div class="contact-link-icon">gh</div>
+                 GitHub
+              </a>
+              <a href="/assets/Aarez Ali Memon_CV.pdf" class="contact-link" download>
+                <div class="contact-link-icon">CV</div>
+                Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>Aarez Ali Memon</span>
+      <span>Abu Dhabi / London · Leaving the world <em>better</em> than I found it.</span>
+    </footer>
+
+  </div><!-- /page-home -->
+
+
+  <!-- ================================================
+       PAGE: BLOG INDEX
+  ================================================ -->
+
+    <div class="page" id="page-blog">
+    <div class="wrap">
+      <div class="blog-hero">
+        <button class="btn-back" onclick="showPage('home')" style="margin-bottom: 2rem;">← Home</button>
+        <div class="section-label">Writing</div>
+        <h1>Tangible <em>thoughts.</em></h1>
+        <p>Writing, research, and the questions I can't leave alone.</p>
+        <div class="blog-filters">
+          <button class="filter-btn active" onclick="filterArticles('all', this)">All</button>
+          <button class="filter-btn" onclick="filterArticles('Tech', this)">Tech</button>
+          <button class="filter-btn" onclick="filterArticles('Strategy', this)">Strategy</button>
+          <button class="filter-btn" onclick="filterArticles('Learning', this)">Learning</button>
+        </div>
+      </div>
+      <div class="blog-list">
+        <div class="articles-list" id="blog-article-list"></div>
+      </div>
+    </div>
+    <footer>
+      <span>Aarez Ali Memon</span>
+      <span>Abu Dhabi / London · Leaving the world <em> better</em> than I found it.</span>
+    </footer>
+  </div>
+  
+
+
+  <!-- ================================================
+       PAGE: ARTICLE READER
+  ================================================ -->
+  <div class="page" id="page-article">
+    <div class="wrap">
+      <div class="article-page-header">
+        <button class="btn-back" onclick="showPage('blog')" style="margin-bottom: 2rem;">← Back to writing</button>
+        <div id="art-tags" style="display: flex; gap: 6px; flex-wrap: wrap;"></div>
+        <h1 id="art-title"></h1>
+        <div class="article-byline">
+          <span>Aarez Ali Memon</span>
+          <span id="art-date"></span>
+        </div>
+      </div>
+      <div class="article-prose" id="art-prose"></div>
+    </div>
+    <footer>
+      <span>Aarez Ali Memon</span>
+      <span>Abu Dhabi / London · Leaving the world <em>better</em> than I found it.</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
